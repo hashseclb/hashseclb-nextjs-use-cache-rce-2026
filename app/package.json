@@ -1,0 +1,13 @@
+{
+  "name": "nextjs-use-cache-rce-lab-app",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

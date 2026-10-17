@@ -1,0 +1,9 @@
+#!/bin/sh
+# artifacts-maintenance — ops helper shipped with the service image.
+# The operator console invokes it through the runMaintenanceJob action.
+case "$1" in
+  reindex) echo "reindexed 128 artifacts" ;;
+  verify)  echo "integrity check passed" ;;
+  prune)   echo "pruned 0 expired artifacts" ;;
+  *)       echo "usage: artifacts-maintenance <reindex|verify|prune>" >&2; exit 2 ;;
+esac
